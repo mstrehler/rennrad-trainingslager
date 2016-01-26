@@ -1,0 +1,480 @@
+% Datei: Documents/rennvelo/trainingswoche/main.tex
+% Begonnen: 14.11.2015 
+% Letzte Änderung: 06.01.2016 
+%
+% Einteilung des Paperformates, des Satzspiegels und eine Bindekorrektur von 1 cm
+\documentclass[a4paper,DIV13,BCOR0cm]{scrartcl}
+
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}    % Schrift "Latin Modern" laden
+\usepackage{mdwlist}    % Für enger gesetzte Listen
+
+\usepackage{typearea}   % Einstellung des Satzspiegels, siehe Latex Hacks, Hack #31
+\usepackage{booktabs}   % schönere Tabellen, siehe WAsmL, p. 124
+
+\usepackage{babelbib}
+\usepackage{url}        % wird von babelbib gebraucht
+
+\usepackage{units}
+\usepackage{gensymb}
+
+% Die Option dvipdfmx und das Paket bmpsize verhindern
+% die Fehlermeldung von latex:
+% "cannot determine size of graphic"
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{url}		% wird von babelbib gebraucht
+\usepackage{apacite}
+%\usepackage{hyperref}
+
+\setcounter{secnumdepth}{2}
+
+% Als Schweizer musste diese Option einfach sein.
+\newcommand{\rv}{Rennvelo}
+%\newcommand{\rv}{Rennrad}
+
+\newcommand{\tlzh}{TLzH}
+\newcommand{\Tlzh}{Trainingslager zu Hause}
+
+\begin{document}
+
+% \titlehead{}
+\lhead{\tlzh}
+
+% \subject{<+Thema+>}
+\title{\rv-\Tlzh{} (\tlzh)}
+\author{Marco Strehler}
+
+%\publishers{}
+\date{11.\,Dezember\,2015}
+
+\maketitle
+%\clearpage
+
+\begin{abstract}
+Dieser Text beschreibt die Vorbereitung und Durchführung eines \rv-Traininglager zu Hause.
+Dabei werden insbesondere die möglichen Nachteile eingegangen,
+und wie diesen begegnet werden kann und allenfalls sogar als Vorteile genutzt werden können.
+Das Ziel ist der optimale Nutzen für das Training für die aufgewendete Zeit.
+\end{abstract}
+
+\tableofcontents
+\section{Einleitung}
+
+Ein Trainingslager (TL) am Beginn der \rv-Saison bietet eine gute Möglichkeit
+konzentriert die Grundlagen für die anstehende Saison festzuzurren.
+Zudem können in einer solchen
+Zeit, in der man ganz in das Thema eintaucht, Nebenprojekte umgesetzt und die
+Motivation gestärkt werden.
+
+Wird von einem Trainings\textsl{lager} gesprochen, impliziert das ein Ortswechsel an einen Ort,
+wo Frühling ist, wenn in Nord- und Mitteleuropa noch Schnee liegt und damit früher mit
+spezifischem Training begonnen werden kann.
+
+Ich habe mich allerdings schon früh entschlossen, ein solches Trainingslager nicht
+auf Mallorca und Co. durchzuführen, sondern zu Hause.
+Ich bin überzeugt, dass ein \tlzh{} viel mehr Vor- als Nachteile hat.
+Der folgende Text soll helfen, diese Vorteile gut zu nutzen und die allfälligen Nachteile
+auszugleichen.
+Ein etwas missionarischer Unterton konnte sich beim Schreiben nicht ganz vermeiden lassen.
+Im Abschnitt \ref{sec:wiesozuhause} beschreibe ich die Vor- und Nachteile eines \tlzh{}.
+
+\section{Wieso ein Trainingslager zu Hause?}
+\label{sec:wiesozuhause}
+
+\subsection{Vorteile eines \tlzh}
+
+Der grösste Vorteil vorweg: ein \tlzh{} kommt um einiges günstiger als ein TL in einem der üblichen Destinationen.
+Die Anreise und das Camp selbst, allenfalls Transport des \rv{} oder Miete vor Ort kommen kaum unter 2000 - 3000 Euro.
+Die Mitnahme des eigenen Fahrrades kostet bei der Swiss in Europaflügen CHF 60 (EUR 50) und bei Interkoninentalflügen CHF 120 (EUR 100)
+\cite{swiss2016fahrradmitnahme}. Die Preise anderer Anbieter sind vergleichbar.
+Bei Mitnahme des eigenen Rades mit dem Flieger kommt allenfalls ein Transportbehälter.
+Die Preisspanne in einem Vergleich von 4 Radkoffern und 6 Radtaschen in der Zeitschrift RoadBIKE ging von EUR 300 bis 800
+\cite{Brunker2015radkoffer}.
+
+Das ist ein Haufen Schotter.
+Doch fast noch wertvoller als Geld ist heute Zeit.
+Bei einem TL in einem anderen Gegend von Europa muss realistischerweise für Hin- und Rückreise je einen Tag gerechnet werden.
+Zwei wertvolle Tage, die man in irgenwelchen Flughäfen und nicht im Sattel sitzt?
+Da blutet das Herz.
+
+Auch ein gut eingerichtetes Hotel bietet nicht die gleich gute Infrastruktur, wie sie zu Hause zur verfügung steht.
+Insbesondere wer eine gut ausgerüstete Werkstatt zu Hause hat, wird sich bei einer allfälligen Reparatur mit dem
+mitgenommenen Notset nach seiner gewohnten Ausrüstung sehnen.
+Dazu kommen noch allfällige Fachliteratur, Einkaufsmöglichkeiten (Fachgeschäft) bei Bedarf und schneller Internetzugang.
+
+Auch ein Trainingslager, dass unterschiedliche Leistungsstufen anbietet wird ein Kompromiss sein.
+Vielleicht arbeitet man selber noch am Grundlagentraining, landet aber in einer Gruppe, die viel Intervaltraining absolviert?
+Nur zu Hause und alleine kann man die eigenen Trainingsziele perfekt umsetzen und muss keine Kompromisse bezüglich Art und Umfang des Trainings eingehen.
+
+Der Zeitpunkt ist nicht von der Planung (oder freien Plätzen)des Anbieters abhängig, sondern kann optimal gewählt werden.
+Der Abschnitt \ref{sec:richtigezeit} widmet sich der Frage nach dem richtigen Zeitpunkt.
+
+Allenfalls neu entdeckte Touren am Wohnort können auch über das Traininglager hinaus in das Repertoire integriert werden.
+Dadurch kann die Nachhaltigkeit sowie auch die Motivation über das ganze Jahr hinaus gesteigert werden.
+
+\subsection{Nachteile eines \tlzh}
+
+Auch, dass mit dem Training für die Saison aufgrund der klimatischen Verhältnisse am Trainingsort früher begonnen werden kann.
+Ein \tlzh ist natürlich -- weil weniger exotisch -- allenfalls weniger motivierender als ein Trainingscamp in Mallorca, Malta oder der Toscana.
+
+In einem Trainingslager hunderte von Kilometern zu Hause kann man sich ganz auf die gliebte Sache konzentrieren.
+Die alltäglichen Pflichten -- Verpflegung, Haushalt -- werden einem weitgehend abgenommen.
+Abgrenzung zum Alltag ist deutlich schwieriger als weit weg von zu Hause (Familie, Beruf).
+
+Es fehlen zu Hause die üblichen <<Profi-Einheiten>>: kein Guide, kein Begleitwagen mit Reservevelo, keine Massage im Hotel.
+Die Verwöhn-Infrastruktur fehlt (Halbpension, Wellnessbereich, Bettenmachen).
+
+Das Fahren in der Gruppe kann nicht speziell geübt werden.
+
+Kein sozialer Bonus, mit einer Woche Radfahren zu Hause kann schlecht angegeben werden.
+Insbesonderen die <<soft facts>>, welche ein Traininglager im Süden ausmachen werden bei \citeNP{Friedrich2008trainingslager}
+schön beschrieben.
+
+\section{Wann ist die richtige Zeit?}
+\label{sec:richtigezeit}
+
+Der Hauptgrund eines TL im Süden ist das Klima.
+Daran gibt es nichts zu rütteln: Temperaturen über \unit[10]{\degree C} gibt es in der Schweiz, Deutschland oder Oesterreich
+drei Monate später als in den bevorzugten südlichen TL-Destinationen (Tabelle \ref{tab:tempmax}).
+Interessant dabei ist aber, dass der Februar in unseren Breitengraden
+wohl kalt aber sehr trocken ist.
+Der Februar hat im Mittel \textit{am wenigsten Niederschläge} von allen Monaten (Tabelle \ref{tab:niederschlag}).
+Der März ewas milder und immer noch sehr trocken.
+Mit geeigneter Bekleidung ist also ein \rv-Training im Februar oder März
+in unseren Breitengraden durchführbar.
+
+\begin{table}
+        \centering
+        \begin{tabular}{lcccccc}
+                \toprule
+                 Land & Jan & Feb & März & Apr & Mai & Jun \\
+                 \midrule
+                 Oesterreich     & \textit{-1,3} & \textit{1,2} & \textit{5,7} & 10,5 & 15,1 & 18,3 \\
+                 Deutschland    & \textit{2,1} & \textit{3,5} & \textit{7,4} & 11.7 & 16,8 & 20,0 \\
+                 Schweiz        & \textit{3,8} & \textit{5,3} & \textit{9,4} & 13,5 & 17,6 & 21,4 \\
+                 Italien        & 11,2 & 12,3 & 14,6 & 17,9 & 22,2 & 26,0 \\
+                Mallorca        & 14,0 & 15,0 & 17,0 & 19,0 & 22,0 & 26,0 \\
+                Sardinien   & 14,1 & 14,7 & 16,1 & 18,4 & 22,3 & 26,3 \\
+                Sizilien    & 14,5 & 14,8 & 16,0 & 18,3 & 22,4 & 26,4 \\
+                Malta       & 15,2 & 15,5 & 16,7 & 19,1 & 23,3 & 27,5 \\
+                 Zypern         & 15,7 & 16,3 & 20,1 & 24,3 & 29,6 & 23,3\\
+                 Spanien        & 15,8 & 16,8 & 18,7 & 20,0 & 22,6 & 25,8 \\
+                 \bottomrule
+        \end{tabular}
+        \caption{
+            Mittleres Temperaturmaximum Januar bis Juni \protect\cite{rtl2015klima}.
+            Die Zeilen sind ansteigend nach der Temperatur im Januar sortiert.
+            Temperaturen unter \protect\unit[10]{\degree C} sind kursiv gesetzt.
+            }
+        \label{tab:tempmax}
+\end{table}
+
+
+\begin{table}
+        \centering
+        \begin{tabular}{lcccccc}
+                \toprule
+                 Land & Jan & Feb & März & Apr & Mai & Jun \\
+                 \midrule
+                 Oesterreich     & 85,2 & \textit{78} & 88,8 & 101 & 115,6 & 141,2 \\
+                 Deutschland    & 54,1 & \textit{44,6} & 52,1 & 57,4 & 69,2 & 81,3 \\
+                 Schweiz        & 73,7 & \textit{72,7} & 84,7 & 102,3 & 126 & 128 \\
+                 \bottomrule
+        \end{tabular}
+        \caption{
+                Mittlere Monatssumme des Niederschlages [mm] Januar bis Juni \protect\cite{rtl2015klima}.
+                Der durchschnittliche trockenste Monat (kursiv) ist der Februar.
+            }
+        \label{tab:niederschlag}
+\end{table}
+
+Für den Zeitpunkt ein möglichst optimales Trainingscamp sollten:
+schon ein Grundlagentraining vorhanden sein (ca. 1000 km, entsprechen 4 - 8 Wochen)
+Nach dem Trainingscamp die Möglichkeit vorhanden sein, das erreichte Niveau aufrecht zu erhalten und zu nutzen.
+
+Strassenzustand:
+zu Beginn des Frühlings sind die Strassen durch Split, Salz und allenfalls liegengebliebener Schnee nicht ideal.
+Um Salzschäden zu vermeiden soll das Rad nach der Ausfahrt auch mit Wasser abgespühlt werden.
+
+Vorteilhaft für das Ferientage-Budget ist eine Woche,
+die bereits offizielle Feiertage enthält.
+So können mit wenig eingesetzten Urlaubstage eine schöne Anzahl
+aneinanderhängender Trainingstage gewonnen werden.
+Der Klassiker ist hier die Karwoche,
+in der man mit vier eingesetzten Ferientagen gleich 10 Tage am Stück zum Trainieren hat
+(Tabelle \ref{tab:karwoche}).
+Der Nachteil an der Karwoche ist, dass diese in der Regel im April liegt,
+der deutlich mehr Niederschläge hat.
+\footnote{Ein kleiner Hinweis für Linux-Anwender:
+mit dem Terminalbefehl \texttt{ncal -e JJJJ} erhält man direkt das
+Datum des Ostersonntages des entsprechenden Jahres. Also mit \texttt{ncal -e 2026}
+den 5.\,April 2026.}
+
+\begin{table}
+        \centering
+        \begin{tabular}{ccc}
+                \toprule
+                    Jahr & Wochen-Nr. & Ferieneingabe (Sa -- Mo)\\
+                \midrule
+                    2016 & 12 & 19.03.16 -- 28.03.16 \\
+                    2017 & 15 & 08.04.17 -- 17.04.17 \\
+                    2018 & 13 & 24.03.18 -- 02.04.18 \\
+                    2019 & 16 & 13.04.19 -- 22.04.19 \\
+                    2020 & 15 & 04.04.20 -- 13.04.20 \\
+                    2021 & 13 & 27.03.21 -- 05.04.21 \\
+                    2022 & 15 & 09.04.22 -- 18.04.22 \\
+                    2023 & 14 & 01.04.23 -- 10.04.23 \\
+                    2024 & 13 & 23.03.24 -- 01.04.24 \\
+                    2025 & 16 & 12.04.25 -- 21.04.25 \\
+                \bottomrule
+        \end{tabular}
+        \caption{Daten der Karwoche.
+            Für die direkte Eingabe der Ferien über die Wochennummer oder
+            der konkrete Zeitraum des \tlzh{} vom Samstag vor der Karwoche bis Ostermontag.}
+        \label{tab:karwoche}
+\end{table}
+
+
+\section{Trainingsplanung}
+
+Grundsätzliches Vorgehen bei der Planung (modifiziert nach \citeNP{Beck2015}):
+
+\begin{itemize*}
+        \item Gesamtstunden 2 -- 2,5-fach des üblichen Pensums.
+        \item Trainingstage in Blöcke von 2 -- 3 Trainingstagen plus einem Regenerationstag aufteilen.
+        \item Die tägliche Trainingszeit jeweils um 0.5 Stunden steigern.
+                Eine Alternative ist, jeweils den zweiten Tag im Block etwas kürzer zu gestalten,
+                um am 3. Tag in sehr guter Form zu sein (z.B. 3:30\,h -- 3:00\,h -- 4:00\,h)
+        \item Die tägliche Trainingszeit wird in jedem Block um 0.5 Stunden gesteigert.
+\end{itemize*}
+
+\begin{table}
+        \centering
+\begin{tabular}{lll}
+    \toprule
+    & Dauer [h] & Trainingsbereich \\
+    \midrule
+        Tag 1 & 3:00 & GA1-Bereich \\
+        Tag 2 & 3:30 & GA1-Bereich \\
+        Tag 3 & -- & Regeneration \\
+        Tag 4 & 3:30 & GA1/2-Bereich \\
+        Tag 5 & 3:00 & GA1/2-Bereich \\
+        Tag 6 & 4:00 & GA1/2-Bereich \\
+    \bottomrule
+\end{tabular}
+\caption{Beispiel für die Gestaltung eines Trainingslagers mit 6 Trainingstagen \protect\cite{Beck2015}.}
+        \label{tab:beispielplan}
+\end{table}
+
+Eine Alternative wäre, das TL nicht im Rahmen des Grundlagentrainings zu sehen,
+sondern als Ausbautraining, resp. ganz konkret in die Wettkampfvorbereitung einzubauen.
+Das Trainingslager wird also nicht für die Grundlage sondern für das <<Peaking>> eingesetzt.
+Damit (von englisch \textit{peak} für Gipfel) wird gezielte Optimierung der Form auf einen Wettkampf bezeichnet.
+Voraussetzung dazu ist natürlich, dass das Grundlagentraining vorgängig auf der Rolle geleistet wurde.
+\citeNP{Beck2011} stellt ein 6-Wochen-Programm im Vorfeld eines Wettkampfs vor.
+Ideal wäre hier, das TL in den Wochen 6, 5 oder 3 dieser Vorbereitungsphase zu legen.
+
+\begin{itemize*}
+        \item Woche 6 Grundlagen legen:
+                Grundlagenausdauer mit langen und lockeren Einheiten.
+                Eine davon soll mindestens so lange dauern wie der geplante Wettkampf.
+        \item Woche 5 Intensität erhöhen:
+                Intensivere Intervalle im GA2-Bereich:
+                Dazu Trittfrequenz-Training mit 100 Umdrehungen pro Minute.
+                Die Anstrengenden Einlagen von 20--30 Minuten in Grundlagenausfahrten integrieren.
+        \item Woche 4 Vorbereitung aufs harte Training:
+                Grundlagenausdauer von kürzerer Dauer von 1.5 bis 2 Stunden
+                um die Grundlage zu stabilisieren.
+        \item Woche 3 Feinschliff:
+                Intensives Training (HIT, Training am Berg, Sprint-Intervalle) oder ein Vorbereitungswettkampf.
+        \item Woche 2 Regeneration:
+                Zwei bis drei lockere Runden. Regeneration mit Schlafen, Massage und Sauna.
+        \item Woche 1 Rennen optimal vorbereiten:
+                Spezielles Training: Dienstag 2h GA1, Mittwoch 2h GA1, Donnerstag 2h lockere Einheit, Freitag Ruhetag, 
+                Samstag 1h GA1-Einheit mit 2mal 2 Minuten EB-Training.
+
+\end{itemize*}
+
+Weitere Feinheiten der Trainingsplanung wäre ein <<Splitting>> der Einheiten.
+Das durchführen von mehreren Trainingseinheiten am Tag hat den Vorteile,
+dass dem allenfalls schlechten oder kalten Wetter Rechnung getragen wird.
+Auch können in zwei kürzeren Einheiten intensivere Einsätze geplant werden.
+Auch gibt es einen doppelten Stimulus.
+Dazwischen 2-4 Stunden Pause, am besten mit einer Schlafphase (Ausschüttung Wachstumshormon).
+
+\section{Streckenplanung}
+
+Während einem \tlzh{} ist man frei. Entsprechend den Trainingszielen sollen die Strecken gewählt werden.
+
+Ein Punkt, der bei der Planung der Strecke allenfalls ins Gewicht fällt,
+sind die Unterschiede im Verkehr zwischen Wochentagen und Wochenende.
+So sind Hauptstrassen, die man von Sonntagsausfahrten kennt plötzlich voller Laster.
+Andererseits sind Ausflugziele besonders an den Wochenenden viel befahren.
+
+Oft wird bei den TL ein Begleitfahrzeug angeboten.
+Der Vorteil bei einem \tlzh{} ist allerdings, dass das Netz des öffentlichen Verkehrs bei uns
+wesentlich dichter ist und das man bei einer nicht reparierbaren Panne oder totaler Erschöpfung
+mitsamt dem \rv{} nutzen kann. Auch könnte man sich mit den eingesparten Kosten auch ein Taxi leisten.
+
+ 
+\section{Training in Kälte}
+
+\subsubsection{Körperliche Adaption}
+Ein \Tlzh{} im März oder April wirft die Frage nach Training in der Kälte auf.
+Die Anpassung an die Kälte erfolgt beim Menschen vorwiegend durch Verhaltensänderung.
+Trotzdem gibt es auch beim Menschen eine körperliche Adaption an Kälte \cite[S. 1032]{Weineck2010}.
+
+\begin{itemize*}
+        \item Nachlassen des Kälteempfindens
+        \item Auftreten von Kältezittern bei tieferen Körperkerntemperaturen
+        \item Steigerung des Grundumsatzes
+        \item lokale Akklimationsion (Hände, Füsse) durch wiederholte Kälteexposition
+\end{itemize*}
+
+\subsubsection{Verhaltensanpassung}
+
+Bezüglich Verhaltensänderung gibt es für Fahren bei Kälte im Netz und Fachzeitschriften massenweise Hinweise
+\cite{Thomas2009rennradbuch, gcn2011winter,gcn2015winter, gcn2015wintermistakes,beck2015frostschutz}.
+
+\begin{itemize*}
+        \item Training:
+                windgeschützte Route wählen (Wald),
+                gegen den Wind losfahren und mit Rückenwind nach Hause <<treiben lassen>>,
+                schweisstreibende Intervalle gegen Schluss des Trainings absolvieren,
+                härter und kürzer trainieren,
+                kurze Anstiege und kurze Abfahrten wählen,
+                kurze Rundstrecken nahe zu Hause von 10 -- 20 km mehrfach absolvieren,
+                bei Reparturstopp bei Gruppenausfahrten soll der Rest der Gruppe in Bewegung bleiben (Schlaufen fahren).
+        \item Kleidung:
+                Zwiebelschalenprinzip der Kleidung (mehrere Schichten sind effektiver),
+                Zeitung oder Plastiktüte als Windschutz unter das Trikot schieben,
+                Zehen mit einer <<Kappe>> aus Aluminium-Folie vor Kälte schützen,
+                Ueberschuhe oder ein altes Paar Socken (mit Loch für die Cleats),
+                ein Paar dünner Gummihandschuhe über die \rv-Handschuhe ziehen,
+                Frischhaltefolie über den Helm gezogen,
+                trockenes Ersatz-Trikot für Kaffee-Stopp.
+        \item Ausrüstung:
+                Isolierte Trinkflasche,
+                Zwei Ersatzschläuche mitführen,
+                Genügend Werkzeug mitführen.
+                Verpflegung mitführen,
+                Smartphone mit Gefrierbeutel vor Nässe (Schweiss) schützen.
+        \item Rad:
+                Reifendruck um 0.5 -- 1.0 bar reduzieren.
+                Reifen regelmässig kontrollieren,
+                All-Wetter-Reifen (z.B. Four Season von Continental, Durano von Schwalbe) montieren,
+                kleine Akku-Leuchten auch für den Tag,
+                Reflektoren an Rad und Kleidung,
+                Spritzschutz montieren,
+                Reinigung und Schmieren des Bikes nach jeder Fahrt,
+
+\end{itemize*}
+
+\section{Regeneration}
+
+Training muss Periodisiert werden. Ein umfangreiches Trainingspensum fordert eine entsprechende Regenerationsphase.
+Es besteht die Gefahr, dass die Verpflichtungen des Alltags jedoch nicht ausreichend Raum für die entsprechend notwendige Regeneration lassen.
+Hier gilt es, die Belastung in dieser Phase gering zu halten: Termine und Pendenzen sollen vor dem TL erledigt werden.
+
+Es ist immer gut, wenn die Familie oder der Partner miteinbezogen wird.
+So ein Camp ist ein kleiner Ego-Trip. Der steht einem zu, soll aber auch in Familie und Partnerschaft eingebettet werden.
+Vielleicht findet die Familie das ja auch toll und man verspricht sich, gegenseitig regelmässig bei solchen <<Camps zu Hause>> zu unterstützen.
+
+Beim Schlaf sollte auf ein ausreichendes Pensum und Rhythmus geachtet werden.
+
+Die Ernährung sollte dem Sport angepasst werden.
+
+Das in der Umgebung angebotene Wellnessprogramm darf in dieser Trainingsphase ausreichend in Anspruch genommen werden.
+Sei es Sauna \cite[S. 795]{Weineck2010}, Thermalbad.
+Wer hart zu Hause trainiert, sollte sich auch den nötigen Luxus gönnen.
+Alles, was hilft, schneller zu regenerieren und sich wieder fit für den nächsten Tag zu machen, sollte unternommen werden.
+
+% \subsection{Open-Window-Phänomen}
+% 
+% Der Begriff des Open-Window-Phänomen beschreibt die immunologische Schwäche nach sportlicher Betätigung.
+% 
+
+\section{Nebenprojekte umsetzen}
+
+Neben Trainieren, Essen, Schlafen bleibt noch etwas Zeit.
+Diese kann genutzt werden, um Projekte rund um das \rv{} umzusetzen.
+
+\begin{itemize}
+        \item Einarbeitung ins Tracken von Routen.
+        \item Sport-Ernährung: Rezepte umsetzen, Riegel selber machen.
+        \item Rennsport-Geschichte: Bücher zum Thema Radrennsport lesen.
+        \item Werkstatt: Aufbau einer eigenen Radwerkstatt (Schrauberecke).
+                Dazu Literatur studieren und allenfalls eigenes kleines Projekt durchziehen.
+        \item Regelmässig in den entsprechenden Foren aktiv werden.
+\end{itemize}
+
+
+\section{Satellitenwochenende vor und nach dem Lager}
+
+Den Effekt eines \tlzh{} lässt sich mit der Nutzung der vor und nachgeschalteten Wochenende deutlich verstärken.
+Gemeint sind nicht die Wochenenden, die den freien Tagen unmittelbar anschliessen -- diese gehören ja noch zum TL.
+Sondern die Wochenenden, die vor- und nachher durch Arbeitstage abgegrenzt sind.
+
+Das Wochenende \textbf{davor} lässt ich beispielsweise nutzen für:
+\begin{itemize*}
+  \item Ausführliche Kontrolle des Materials incl. längere Probefahrt.
+    Defektes oder fehlendes Material kann in der Woche vor dem TL nachgekauft werden.
+  \item Ausführliche Detailplanung des TL.
+  \item Familie ausführen -- gewissermassen einen Vorschuss darauf, dass diese in nächster Zeit auf sie verzichten muss.
+\end{itemize*}
+
+Das Wochenende \textbf{danach} ist für:
+
+\begin{itemize*}
+  \item Den Trainingsreiz erhalten -- dabei sollen die Ruhetage nach dem Lager bewusst als Erholung genutzt werden.
+    Am besten mit je zwei Ausfahrten am Samstag und am Sonntag des Satellitenwochenendes.
+  \item Auswertung der TL: was war gut, was schlecht, Trainingsdaten, Tagebuch.
+  \item Wartung und Pflege (Wiederherstellen) des Materials
+\end{itemize*}
+
+
+\section{Zu vermeidende Fehler}
+
+Ich führe für mich seit einigen Jahren 1 -- 2 \tlzh{} im Jahr durch.
+Gemäss meiner Erfahrung sind hier die grössten Fehler aufgelistet.
+Zum grossen Teil decken sie sich mit den Fehlern, die man auch in einem TL in einem fernen Land machen kann \cite{Beck2016trainingslagersuenden}.
+Bei einem \tlzh{} kommen meines Erachtens noch ein paar Stolpersteine dazu.
+
+\subsection{Keine oder ungenügende Vorbereitung}
+
+
+\subsection{Schwieriges Nebenprojekt, die man <<nebenbei>> noch erledigen will}
+
+Ich vergesse nicht eines meiner ersten \tlzh{}. Es war Herbst und neben der wunderbaren Woche,
+die ich mir durch zu kompensierende Überstunden verdient habe, nahte der Abgabetermin der jährlichen Steuererklärung.
+Keine grosse Sache, die ich eigentlich in den ersten Tagen -- neben dem Training erledigen wollte.
+Es kam so wie es oft kommt. Das Wetter war toll und neben den Radfahren blieb die Steuererklärung liegen -- bis zum letzten Tag.
+Es war ein sündenschöner Herbsttag: frisch, klare Luft, wunderbares Licht.
+Aber ich konnte meinen Kopf nicht bei der Sache halten, die liegengebliebene Erklärung lag schwer auf Magen und machte die Beine schwer.
+Nicht nur hatte ich jeden Tag beim Verschieben ein schlechtes Gewissen,
+ich musste auch dauernd an das verflixte Ding denken und es kostete mich grosse Überwindung, es endlich fertig zu kriegen.
+
+\subsection{Kein Ziel gesetzt}
+
+Ziele müssen positiv formuliert und überprüfbar sein.
+
+\subsection{Ernährung vernachlässigen}
+
+Das Risiko ist bei einem TL in einem exotischen Ort mit einem verlockenden Buffet sicher grösser.
+
+\subsection{Regenration vernachlässigen}
+
+\subsection{Den Trainingsreiz nicht optimal in die Form retten}
+
+
+\bibliographystyle{apacite}
+\bibliography{trainingslager.bib}
+
+\end{document}
