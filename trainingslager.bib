@@ -1,3 +1,14 @@
+% Literatur für Trainingslager
+% 
+% Folding in diesem File
+% Die Datei enthält ganz am Schluss eine Modline, die die foldmethod setzt
+% (=marker). Die gefoldeten Anteile müssen in dreifache geschweifte Klammern
+% gesetzt werden {{{ }}}, Zeichen zum Auskommentieren sind dabei egal. Mit zo
+% wird der Fold geöffnet, mit zc geschlossen. zM schliesst alle Folds, egal
+% wo der Cursor ist, zR öffnet alle.
+
+% String-Definitionen {{{
+
 @STRING(TO = "Tour")
 @STRING(RB = "{R}oad{B}ike")
 @STRING(GCN = "{Global Cycling Network}")
@@ -14,23 +25,8 @@
 @STRING(tweet = "Tweet")
 @STRING(video = "Video-Datei")
 
-@article{Beck2011,
-    author =    {Beck, Daniel},
-    title =     {{F}einschliff f{\"u}rs {R}ennen -- {V}oll am {L}imit},
-    year =      2011,
-    journal =   RB,
-    pages =     {106--109},
-    number =    {6},
-}
-
-@article{Flieshardt2012radfahrerregeln,
-    author =    {Flieshardt, Nils},
-    title =     {{R}egeln f{\"u}r {R}ad- und {A}utofahrer},
-    year =      2015,
-    journal =   RB,
-    pages =     {61--66},
-    number =    {7},
-}
+% }}}
+% {{{ YouTube-Videos
 
 % You-Tube Video
 @misc{gcn2011winter,
@@ -78,7 +74,9 @@
           not enough tools and spares}
 }
 
-% Blog-Eintrag
+% }}}
+% Blog-Einträge {{{
+
 @misc{Reisberg2014,
     author =    {Lars Reisberg},
     title =     {5 {T}rainings-{T}ipps f{\"u}r die {L}angstrecke auf dem {R}ennrad: {E}ine etwas andere {S}ternfahrt},
@@ -102,15 +100,26 @@
     lastchecked = {10.01.2016},
 }
 
-@BOOK{Weineck2010,
-        author =    {Weineck, J{\"u}rgen},
-        title =     {Sportbiologie},
-        year =      2010,
-        edition =   {10}
-        publisher = {Spitta Verlag},
-        ISBN =      {978-3-938509-25-8},
+% }}}
+% Artikel {{{
+
+@article{Beck2011,
+    author =    {Beck, Daniel},
+    title =     {{F}einschliff f{\"u}rs {R}ennen -- {V}oll am {L}imit},
+    year =      2011,
+    journal =   RB,
+    pages =     {106--109},
+    number =    {6},
 }
 
+@article{Flieshardt2012radfahrerregeln,
+    author =    {Flieshardt, Nils},
+    title =     {{R}egeln f{\"u}r {R}ad- und {A}utofahrer},
+    year =      2015,
+    journal =   RB,
+    pages =     {61--66},
+    number =    {7},
+}
 @ARTICLE{Beck2016trainingslagersuenden,
   author = {Beck, Daniel},
   title = {{D}ie 5 gr{\"o}ssten {T}rainingslagers{\"u}nden},
@@ -172,15 +181,6 @@
         otherinfo = {}
 }
 
-@incollection{Gabriel2004,
-  title={{S}port und {I}mmunsystem},
-  author={Gabriel, Holger},
-  booktitle={{K}ompendium der {S}portmedizin},
-  pages={227--250},
-  year={2004},
-  publisher={Springer}
-}
-
 @article{nieman1999exercise,
   title={Exercise and immune function},
   author={Nieman, David C and Pedersen, Bente K},
@@ -203,16 +203,8 @@
         month = {oct},
         otherinfo = {}
 }
-
-@BOOK{Thomas2009rennradbuch,
-        author = {Steve Thomas and Ben Searle and Dave Smith},
-        editor = {},
-        title = {{D}as grosse {R}ennradbuch -- {T}raining, {T}echnik, {T}aktik},
-        publisher = {Delius Klasing},
-        year = {2009},
-        edition = {4},
-        otherinfo = {}
-}
+% }}}
+% Webseiten {{{
 
 @MISC{rtl2015klima,
         author = {{RTL interactive GmbH}},
@@ -232,6 +224,27 @@
 
 }
 
+% }}}
+% Bücher {{{
+        
+@incollection{Gabriel2004,
+  title={{S}port und {I}mmunsystem},
+  author={Gabriel, Holger},
+  booktitle={{K}ompendium der {S}portmedizin},
+  pages={227--250},
+  year={2004},
+  publisher={Springer}
+}
+
+@BOOK{Thomas2009rennradbuch,
+        author = {Steve Thomas and Ben Searle and Dave Smith},
+        editor = {},
+        title = {{D}as grosse {R}ennradbuch -- {T}raining, {T}echnik, {T}aktik},
+        publisher = {Delius Klasing},
+        year = {2009},
+        edition = {4},
+        otherinfo = {}
+}
 @BOOK{Konopka2006radsport,
         author = {Konopka, Peter},
         title = {Radsport: der {R}atgeber f{\"u}r {A}usr{\"u}stung, {T}echnik, {T}raining, {E}rn{\"a}hrung, {W}ettkampf und {M}edizin} ,
@@ -247,5 +260,15 @@
         year = {2014},
         edition = {1},
 }
+@BOOK{Weineck2010,
+        author =    {Weineck, J{\"u}rgen},
+        title =     {Sportbiologie},
+        year =      2010,
+        edition =   {10}
+        publisher = {Spitta Verlag},
+        ISBN =      {978-3-938509-25-8},
+}
+% }}}
 
-
+% Modline
+% vim:foldmethod=marker:foldlevel=0
