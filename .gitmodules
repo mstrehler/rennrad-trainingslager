@@ -1,0 +1,3 @@
+[submodule "roadbikebib"]
+	path = roadbikebib
+	url = https://github.com/mstrehler/roadbikebib.git
