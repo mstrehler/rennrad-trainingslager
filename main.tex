@@ -23,7 +23,8 @@
 % Die Option dvipdfmx und das Paket bmpsize verhindern
 % die Fehlermeldung von latex:
 % "cannot determine size of graphic"
-\usepackage[dvipdfmx]{graphicx}
+% XXX: die Option dvipdfmx in graphicx hat bewirkt, dass Bilder nicht mehr angezeigt wurden.
+\usepackage[]{graphicx}
 \usepackage{bmpsize}
 
 \usepackage{fancyhdr}
@@ -559,10 +560,13 @@ Das Geld ist futsch, wenn das Ziel nicht erreicht wird.
 Um Schummeln zu umgehen, können Schiedsrichter ernannt werden (z.B. Kollegen, die Ehefrau), die das Erreichen des Ziels bestätigen müssen.
 Studien haben gezeigt, dass Ziele, bei denen es um Geld geht eher erreicht werden, als wenn es eine reine <<Ehrensache>> bleibt.
 
-\begin{figure}[htpb]
+\begin{figure}[htb]
   \centering
   \includegraphics[width=0.7\textwidth]{figs/stickkcom.jpg}
-  \caption{Auf der Website lassen sich frei Ziele formulieren und darauf eine Wette abschliessen.}
+
+  % ein url-Befehl in einer float-Umgebung verlangt ein \protect
+  \caption{Auf der Website \protect\url{http://www.stickk.com} lassen sich Ziele festlegen und darauf für sich selbst eine Wette abschliessen.
+    Dass auch Geld gewettet werden kann, dass bei Nichterreichen futsch ist, soll das festhalten am Ziel erhöhen.}
   \label{fig:stickkcom}
 \end{figure}
 
