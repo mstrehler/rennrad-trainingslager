@@ -20,6 +20,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+
+% Problem, ein Hyphen in einem Wort (z.B. "Borderline-Persönlichkeitsstörung") verhindert,
+% dass das Wort weiter getrennt wird. Begründung siehe:
+% http://tex.stackexchange.com/questions/63232/why-can-words-with-hyphen-char-not-be-hyphenated/63234#63234
+% Zitat:
+% The T1 encoded fonts have in position 0x7F a character which is identical to the normal hyphen.
+% Changing the \hyphenchar to denote this slot, the normal hyphen does not inhibit hyphenation any more
+% Folgender Befehl ändert den Hyphen-Charakter.
+\hyphenchar\font=\string"7F
 \hyphenation{Trai-nings-la-ger}
 \hyphenation{Renn-rad}
 \hyphenation{Renn-ve-lo}
