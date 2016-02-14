@@ -1,21 +1,40 @@
 % Datei: Documents/rennvelo/trainingslager/main.tex
 % Begonnen: 14.11.2015 
-% Letzte Änderung: 08.02.2016 
 %
 % Einteilung des Paperformates, des Satzspiegels und eine Bindekorrektur
 \documentclass[a4paper,DIV13,BCOR0cm]{scrartcl}
 
+% Sprach-Einstellungen
+% babel ermöglicht die Verwendung verschiedener Sprachen, z.B. in Zitaten.
+% Können mit \selectlanguage{english} resp. \selectlanguage{ngerman}
+% umgestellt werden. Dabei ist die zuletzt eingestellte Sprache die
+% Grundsprache und die Sprache der Bezeichner ("Inhaltsverzeichnis",
+% "Abbildung") fest. Die Bezeichner können im Dokumentteil noch geändert
+% werden (z.B. \renewcommand*\contentsname{Inhalt}). inputenc erlaubt die
+% direkte Eingabe von Sonderzeichen, insbesondere deutscher Umlaute. Durch
+% \usepackage[T1]{fontenc} werden von LaTeX Fonts in westeuropäischer
+% Codierung verlangt. Dies führt zu einer verbesserten Trennung für
+% westliche Sprachen. Zudem wird die Standardschrift von Computer Modern zu
+% European Computer Modern umgeschaltet.
 \usepackage[english,ngerman]{babel}
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}    % Schrift "Latin Modern" laden
-\usepackage{mdwlist}    % Für enger gesetzte Listen
+\usepackage[T1]{fontenc}
 
+% Schrift
+\usepackage{lmodern}    % Schrift "Latin Modern" laden
+% Folgende Schrift-Optionen für serifenlose resp. Schreibmaschinenschrift aktivieren.
+% \renewcommand*\familydefault{\sfdefault} % Serifenlose Schrift
+% \renewcommand*\familydefault{\ttdefault} % Schreibmaschinenschrift
+
+% Typographische Feinheiten
 \usepackage{typearea}   % Einstellung des Satzspiegels, siehe Latex Hacks, Hack #31
+\usepackage{mdwlist}    % Für enger gesetzte Listen
 \usepackage{booktabs}   % schönere Tabellen, siehe WAsmL, p. 124
 
-\usepackage{babelbib}
-\usepackage{url}        % wird von babelbib gebraucht
+% Bietet mehr Kontrolle über Kopf- und Fusszeile
+% Infos und Tutorial: https://www.ctan.org/pkg/fancyhdr
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \usepackage{units}
 \usepackage{gensymb}
@@ -27,9 +46,7 @@
 \usepackage[]{graphicx}
 \usepackage{bmpsize}
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-
+\usepackage{babelbib}
 \usepackage{url}		% wird von babelbib gebraucht
 \usepackage{apacite}
 %\usepackage{hyperref}
@@ -44,6 +61,10 @@
 \newcommand{\Tlzh}{Trainingslager zu Hause}
 
 \begin{document}
+
+% Neudefinition einiger Bezeichner
+\renewcommand*\contentsname{Inhalt} % Standart: Inhaltsverzeichnis
+\renewcommand*\refname{Quellen} % Standart: Literaturverzeichnis
 
 % \titlehead{}
 \lhead{\tlzh}
